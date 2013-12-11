@@ -48,6 +48,10 @@ public class BlockNewOre extends BaseBlock
     	{
     		return ModItems.TunarusShard.itemID;
     	}
+    	else if(BlockIcon == "ShadowStone")
+    	{
+    		return ModBlocks.ShadowStone.blockID;
+    	}
     	else
     	{
     		System.out.println("[Hardmode]: Block Name Given:"+BlockIcon);

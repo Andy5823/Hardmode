@@ -6,9 +6,12 @@ import Hardmode.Core.BucketHandler;
 import Hardmode.Core.CommonProxy;
 import Hardmode.Core.ConfigurationFile;
 import Hardmode.Core.HardmodeCreativeTab;
+import Hardmode.Core.ToolHandler;
+import Hardmode.Enchants.ModEnchants;
 import Hardmode.Items.ModItems;
 import Hardmode.Recipes.BlockItemRecipes;
 import Hardmode.Refrences.Refrence;
+import Hardmode.WorldGen.HardmodeWorldGenHandler;
 import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -19,6 +22,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 @Mod(modid = Refrence.MOD_ID, name = Refrence.MOD_NAME, version = Refrence.VERSION)
@@ -49,7 +53,10 @@ public class Hardmode
         
         LiquidHandler.registerLiquid();
         
+        ModEnchants.RegisterEnchants();
+        
         BucketHandler.INSTANCE.buckets.put(ModBlocks.CorruptedWater, ModItems.CorruptWaterBucket);
+        
     }
     
     @EventHandler
@@ -62,6 +69,10 @@ public class Hardmode
         proxy.initRenderingAndTextures();
         
         proxy.registerTileEnities();
+        
+        ToolHandler.SetToolLevels();
+        
+        GameRegistry.registerWorldGenerator(new HardmodeWorldGenHandler());
     }
     
     @EventHandler
