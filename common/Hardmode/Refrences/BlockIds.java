@@ -12,4 +12,9 @@ public class BlockIds
 	public static int CORRUPTED_LOG_ID;
 	public static int SHADOW_STONE_ID;
 	public static int CORRUPTED_WATER_ID;
+	public static int SPELL_BINDER_ID;
+	public static int MOON_STONE_BLOCK_ID;
+	public static int TUNARUS_BLOCK_ID;
+	public static int UTARAN_BLOCK_ID;
+	
 }

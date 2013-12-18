@@ -3,7 +3,7 @@ package Hardmode.Refrences;
 public class Names 
 {
 	//Blocks
-	public static String ENDER_FORGE = "EnderForge_Base";
+	public static String ENDER_FORGE = "EnderForge";
 	public static String MOON_STONE_ORE = "MoonStoneOre";
 	public static String TUNARUS_ORE = "TunarusOre";
 	public static String UTARAN_ORE = "UtaranOre";
@@ -13,6 +13,10 @@ public class Names
 	public static String CORRUPTED_LOG = "CorruptedWood";
 	public static String SHADOW_STONE = "ShadowStone";
 	public static String CORRUPTED_WATER = "CorruptWater";
+	public static String SPELL_BINDER = "SpellBinder";
+	public static String MOON_STONE_BLOCK = "MoonStone";
+	public static String TUNARUS_BLOCK = "Tunarus";
+	public static String UTARAN_BLOCK = "Utaran";
 	
 	//Items
 	public static String ENDER_HAMMER = "EnderHammer";

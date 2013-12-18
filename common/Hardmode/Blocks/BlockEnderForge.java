@@ -15,16 +15,6 @@ public class BlockEnderForge extends BaseBlockTile
 		this.setLightOpacity(0);
         this.setUnlocalizedName(Names.ENDER_FORGE);
 	}
-	
-	public boolean renderAsNormalBlock()
-    {
-        return false;
-    }
-    
-    public boolean isOpaqueCube()
-    {
-        return false;
-    }
     
     public int getRenderType()
     {

@@ -18,6 +18,16 @@ public class BaseBlockTile extends BlockContainer
         this.setCreativeTab(Hardmode.tab);
     }
     
+    public boolean renderAsNormalBlock()
+    {
+        return false;
+    }
+    
+    public boolean isOpaqueCube()
+    {
+        return false;
+    }
+    
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister iconRegister)
     {

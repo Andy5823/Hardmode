@@ -1,6 +1,7 @@
 package Hardmode.Core;
 
 import Hardmode.TileEntities.TileEntityEnderForge;
+import Hardmode.TileEntities.TileEntitySpellBinder;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 import cpw.mods.fml.common.network.IGuiHandler;
@@ -16,6 +17,7 @@ public class CommonProxy implements IGuiHandler
     public void registerTileEnities()
     {
     	GameRegistry.registerTileEntity(TileEntityEnderForge.class, "EnderForge");
+    	GameRegistry.registerTileEntity(TileEntitySpellBinder.class, "SpellBinder");
     }
     
     @Override

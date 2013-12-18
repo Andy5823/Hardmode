@@ -19,7 +19,11 @@ public class ConfigurationFile
     	BlockIds.CORRUPTED_PLANKS_ID = config.getBlock("Corrupted Planks Block ID", 806).getInt();
     	BlockIds.CORRUPTED_LOG_ID = config.getBlock("Corrupted Logs ID", 807).getInt();
     	BlockIds.SHADOW_STONE_ID = config.getBlock("Shadow Stone Block ID", 808).getInt();
-    	BlockIds.CORRUPTED_WATER_ID = config.getBlock("Corrupted Water (Still) Block ID", 809).getInt();
+    	BlockIds.CORRUPTED_WATER_ID = config.getBlock("Corrupted Water Block ID", 809).getInt();
+    	BlockIds.SPELL_BINDER_ID = config.getBlock("Spell Binder ID", 810).getInt();
+    	BlockIds.MOON_STONE_BLOCK_ID = config.getBlock("MoonStone Block ID", 811).getInt();
+    	BlockIds.TUNARUS_BLOCK_ID = config.getBlock("Tunarus Block ID", 812).getInt();
+    	BlockIds.UTARAN_BLOCK_ID = config.getBlock("Utaran Block ID", 813).getInt();
     	
     	ItemIds.ENDER_HAMMER = config.getItem("Ender Hammer Item ID", 8000).getInt();
     	ItemIds.ANCIENT_SHARD = config.getItem("Ancient Shard Item ID", 8001).getInt();

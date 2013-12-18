@@ -19,6 +19,10 @@ public class ModBlocks
 	public static Block CorruptedLog;
 	public static Block ShadowStone;
 	public static Block CorruptedWater;
+	public static Block SpellBinder;
+	public static Block MoonStone;
+	public static Block Tunarus;
+	public static Block Utaran;
 	
 	public static void InitializeBlocks()
     {
@@ -31,7 +35,11 @@ public class ModBlocks
 		CorruptedPlanks = (new BlockCorrupted(BlockIds.CORRUPTED_PLANKS_ID, Names.CORRUPTED_PLANKS, Material.wood));
 		CorruptedLog = (new BlockCorruptedLog(BlockIds.CORRUPTED_LOG_ID));
 		ShadowStone = (new BlockNewOre(BlockIds.SHADOW_STONE_ID, Names.SHADOW_STONE));
-        
+		SpellBinder = (new BlockSpellBinder(BlockIds.SPELL_BINDER_ID));
+		MoonStone = (new BaseBlock(BlockIds.MOON_STONE_BLOCK_ID, Material.iron)).setUnlocalizedName(Names.MOON_STONE_BLOCK);
+		Tunarus = (new BaseBlock(BlockIds.TUNARUS_BLOCK_ID, Material.iron)).setUnlocalizedName(Names.TUNARUS_BLOCK);
+		Utaran = (new BaseBlock(BlockIds.UTARAN_BLOCK_ID, Material.iron)).setUnlocalizedName(Names.UTARAN_BLOCK);
+		
         RegisterBlocks();
     }
     
@@ -39,13 +47,17 @@ public class ModBlocks
     {
         GameRegistry.registerBlock(EnderForge);
         GameRegistry.registerBlock(MoonStoneOre);
-        GameRegistry.registerBlock(TunarusOre);
         GameRegistry.registerBlock(UtaranOre);
+        GameRegistry.registerBlock(TunarusOre);
         GameRegistry.registerBlock(CorruptedStone);
     	GameRegistry.registerBlock(CorruptedDirt);
     	GameRegistry.registerBlock(CorruptedPlanks);
     	GameRegistry.registerBlock(CorruptedLog);
     	GameRegistry.registerBlock(ShadowStone);
+    	GameRegistry.registerBlock(SpellBinder);
+    	GameRegistry.registerBlock(MoonStone);
+        GameRegistry.registerBlock(Utaran);
+        GameRegistry.registerBlock(Tunarus);
     	
         InitializeNames();
     }
@@ -61,5 +73,9 @@ public class ModBlocks
     	LanguageRegistry.addName(CorruptedPlanks, "Corrupt Planks");
     	LanguageRegistry.addName(CorruptedLog, "Corrupt Log");
     	LanguageRegistry.addName(ShadowStone, "Shadow Stone");
+    	LanguageRegistry.addName(SpellBinder, "Spellbinder");
+    	LanguageRegistry.addName(MoonStone, "Moon Stone Block");
+    	LanguageRegistry.addName(Tunarus, "Tunarus Block");
+    	LanguageRegistry.addName(Utaran, "Utaran Block");
     }
 }

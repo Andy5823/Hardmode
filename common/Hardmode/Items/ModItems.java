@@ -61,7 +61,7 @@ public class ModItems
     	UtaranIngot = (new BaseItem(ItemIds.UTARAN_INGOT, Names.UTARAN_INGOT)).setMaxStackSize(64);
     	WretechedIngot = (new BaseItem(ItemIds.WRETCHED_INGOT, Names.WRETCHED_INGOT)).setMaxStackSize(64);
     	InstableMatter = (new BaseItem(ItemIds.INSTABLE_MATTER, Names.INSTABLE_MATTER));
-    	TunarusPistol = (new BaseItem(ItemIds.TUANRUS_PISTOL, Names.TUANRUS_PISTOL));
+    	TunarusPistol = (new ItemPistol(ItemIds.TUANRUS_PISTOL, Names.TUANRUS_PISTOL));
     	EnderSword = (new BaseItem(ItemIds.ENDER_SWORD, Names.ENDER_SWORD) /*TODO MAKE PROPER ITEM*/);
         
         InitializeNames();
